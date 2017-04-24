@@ -4,24 +4,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-/**
- * Created by hy on 2017/4/23.
- */
 public class Browser {
     WebDriver driver;
 
-    public  Browser(int driverType) {
+    public Browser(int driverType) {
        // Runtime  runtime=new Runtime();
-
         setDriverType(driverType);
         maxBrowser();
     }
 
-    public void maxBrowser(){
+    private void maxBrowser(){
         driver.manage().window().maximize();
     }
     private  void setDriverType(int driverType) {
-
         switch (driverType) {
             case 1: {
                 setUpFirefoxDriver();
