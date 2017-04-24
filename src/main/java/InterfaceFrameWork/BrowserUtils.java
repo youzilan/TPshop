@@ -6,13 +6,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Mouse;
 
-/**
- * Created by hy on 2017/4/23.
- */
 public class BrowserUtils extends Browser {
     private static Logger logger=Logger.getLogger(BrowserUtils.class);
 
-    public BrowserUtils(int driverType) {
+    public  BrowserUtils(int driverType) {
         super(driverType);
     }
 
@@ -24,7 +21,7 @@ public class BrowserUtils extends Browser {
     public void openWeb(String url){
         if (url.equals("")||url==null){
             logger.info("url为空");
-            return;
+            return ;
         }else{
             driver.get(url);
             logger.info("url为"+url);
