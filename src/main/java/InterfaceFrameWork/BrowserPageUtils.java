@@ -1,8 +1,9 @@
 package InterfaceFrameWork;
 
-import org.apache.log4j.Logger;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.log4testng.Logger;
 
 import java.util.List;
 

@@ -1,10 +1,12 @@
 package InterfaceFrameWork;
 
-import org.apache.log4j.Logger;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Mouse;
+import org.testng.log4testng.Logger;
+
 
 public class BrowserUtils extends Browser {
     private static Logger logger=Logger.getLogger(BrowserUtils.class);

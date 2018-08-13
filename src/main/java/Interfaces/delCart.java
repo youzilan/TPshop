@@ -2,7 +2,8 @@ package Interfaces;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
-import org.apache.log4j.Logger;
+import org.testng.log4testng.Logger;
+
 
 import java.util.ArrayList;
 import java.util.List;

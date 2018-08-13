@@ -1,6 +1,8 @@
 package Interfaces;
 
-import org.apache.log4j.Logger;
+
+
+import org.testng.log4testng.Logger;
 
 import java.util.Map;
 import java.util.ResourceBundle;

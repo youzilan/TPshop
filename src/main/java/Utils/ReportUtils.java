@@ -1,10 +1,12 @@
 package Utils;
 
-import org.apache.commons.lang3.time.DateFormatUtils;
+
+import org.apache.commons.lang.time.DateFormatUtils;
 import org.apache.log4j.Logger;
 import org.testng.Reporter;
 
 import java.io.File;
+import java.text.DateFormat;
 import java.util.Date;
 
 public class ReportUtils {

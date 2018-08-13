@@ -18,6 +18,10 @@ import java.util.Map;
 
 /**
  * Created by hy on 2017/3/31.
+ *
+ *
+ *
+ *
  */
 public class excelIterator implements Iterator{
     private  int rowNum;
@@ -36,8 +40,8 @@ public class excelIterator implements Iterator{
         Row row=sheet.getRow(0);
         rowNum=sheet.getPhysicalNumberOfRows();
         colNum=row.getPhysicalNumberOfCells();
-
         titles=new String[colNum];
+        
         Iterator <Cell> itr=row.cellIterator();
         int count=0;
         while (itr.hasNext()){
@@ -57,8 +61,8 @@ public class excelIterator implements Iterator{
     }
 
     public Object[] next() {
-
-            Row row = sheet.getRow(this.curRowNum);
+                 //  迭代器的next()方法
+            Row row = sheet.getRow(this.curRowNum);   //      curRowNum:当前行数
             Map<String, String> map = new HashMap<String, String>();
             String value=null;
             for (int i = 0; i < colNum; i++) {
@@ -82,5 +86,14 @@ public class excelIterator implements Iterator{
 
     public void remove() {
 
+    }
+
+
+    public static void main(String[] args) {
+        try {
+            excelIterator c=new excelIterator("C:\\Users\\Administrator\\Desktop\\test","test");//C:\Users\Administrator\Desktop
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
